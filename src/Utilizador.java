@@ -4,9 +4,10 @@ public class Utilizador extends Object{
 	TipoUtilizador tipoUtilizador;
 	
 	
-	public Utilizador(String nome_, String estado_) {
+	public Utilizador(String nome_, String estado_, TipoUtilizador tu) {
 		this.nome = nome_;
 		this.estado = estado_;
+		this.tipoUtilizador = tu;
 	}
 	
 	public String getEstado() {

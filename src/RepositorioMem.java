@@ -1,37 +1,25 @@
 import java.util.ArrayList;
 
-public class Repositorio {
+public class RepositorioMem implements Repositorio {
 
-	ArrayList<Coima> coima_al;
-	ArrayList<Copia> copia_al;
-	ArrayList<Devolucao> devolucao_al;
-	ArrayList<Emprestimo> emprestimo_al;
-	ArrayList<Livro> livro_al;
-	ArrayList<Notificacao> notificacao_al;
-	ArrayList<Requisicao> requisicao_al;
-	ArrayList<Utilizador> utilizador_al;
-	ArrayList<TipoUtilizador> tipoUtilizador_al;
-	ArrayList<RequisicaoCompra> requisicaoCompra_al;
-	ArrayList<Encomenda> encomenda_al;
-	ArrayList<PropostaAquisicao> propostaAquisicao_al;
-	ArrayList<EntradaNovoLivro> entradaNovoLivro_al;
+//	private static final RepositorioMem instance = null;
+
+	ArrayList<Coima> coima_al = new ArrayList<Coima>();
+	ArrayList<Copia> copia_al = new ArrayList<Copia>();
+	ArrayList<Devolucao> devolucao_al = new ArrayList<Devolucao>();
+	ArrayList<Emprestimo> emprestimo_al = new ArrayList<Emprestimo>();
+	ArrayList<Livro> livro_al = new ArrayList<Livro>();
+	ArrayList<Notificacao> notificacao_al = new ArrayList<Notificacao>();
+	ArrayList<Requisicao> requisicao_al = new ArrayList<Requisicao>();
+	ArrayList<Utilizador> utilizador_al = new ArrayList<Utilizador>();
+	ArrayList<TipoUtilizador> tipoUtilizador_al = new ArrayList<TipoUtilizador>();
+	ArrayList<RequisicaoCompra> requisicaoCompra_al = new ArrayList<RequisicaoCompra>();
+	ArrayList<Encomenda> encomenda_al = new ArrayList<Encomenda>();
+	ArrayList<PropostaAquisicao> propostaAquisicao_al = new ArrayList<PropostaAquisicao>();
+	ArrayList<EntradaNovoLivro> entradaNovoLivro_al = new ArrayList<EntradaNovoLivro>();
 	
 	
-	public Repositorio() {
-		coima_al = new ArrayList<Coima>();
-		copia_al = new ArrayList<Copia>();
-		devolucao_al = new ArrayList<Devolucao>();
-		emprestimo_al = new ArrayList<Emprestimo>();
-		livro_al = new ArrayList<Livro>();
-		notificacao_al = new ArrayList<Notificacao>();
-		requisicao_al = new ArrayList<Requisicao>();
-		utilizador_al = new ArrayList<Utilizador>();
-		tipoUtilizador_al = new ArrayList<TipoUtilizador>();
-		requisicaoCompra_al = new ArrayList<RequisicaoCompra>();
-		encomenda_al = new ArrayList<Encomenda>();
-		propostaAquisicao_al = new ArrayList<PropostaAquisicao>();
-		entradaNovoLivro_al = new ArrayList<EntradaNovoLivro>();
-	}
+	public RepositorioMem() {}
 	
 	public void adicionaCoima(Coima coima) {
 		coima_al.add(coima);
@@ -88,6 +76,13 @@ public class Repositorio {
 		}
 		return null;
 	}
-	
+/*
+	public static RepositorioMem getInstance(){
+		if (instance == null)
+			return new RepositorioMem();
+		else
+			return instance;
+	}
+*/
 	
 }
